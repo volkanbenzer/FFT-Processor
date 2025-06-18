@@ -1,0 +1,38 @@
+Time resolution is 1 ps
+FFT Finish, dataL:   64
+dB[          0]:   1286
+dB[          1]:   1324
+dB[          2]:   1455
+dB[          3]:   1727
+dB[          4]:   2287
+dB[          5]:   3723
+dB[          6]:  12484
+dB[          7]:   8214
+dB[          8]:   3016
+dB[          9]:   1836
+dB[         10]:   1318
+dB[         11]:   1031
+dB[         12]:    849
+dB[         13]:    727
+dB[         14]:    638
+dB[         15]:    571
+dB[         16]:    517
+dB[         17]:    476
+dB[         18]:    444
+dB[         19]:    415
+dB[         20]:    393
+dB[         21]:    373
+dB[         22]:    358
+dB[         23]:    345
+dB[         24]:    334
+dB[         25]:    325
+dB[         26]:    318
+dB[         27]:    310
+dB[         28]:    306
+dB[         29]:    303
+dB[         30]:    300
+dB[         31]:    299
+bitReversalBusy_ClkCount:        900
+butterflyBusy_OutputPin:       9746
+dBCalculatorBusy_ClkCount:       1408
+$stop called at time : 1731095 ns : File "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sim_1/imports/new/test_64.v" Line 438

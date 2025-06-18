@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/BitReversalModul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BitReversalModul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/Communication_Interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Communication_Interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/FFT_Processor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFT_Processor_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/new/FixFFT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FixFFT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/RAM_16x1024.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_16x1024
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/Serial_Interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serial_Interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/baudRateGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baudRateGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/butterflyModul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ButterflyModul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/dB_Calculator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dB_Calculator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/fixMultiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixMultiplier
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/sqrt32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sqrt32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sim_1/imports/new/test_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_64
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sim_1/imports/new/test_64.v:283]
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sim_1/imports/new/test_64.v:296]
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sim_1/imports/new/test_64.v:307]
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sim_1/imports/new/test_64.v:318]
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sim_1/imports/new/test_64.v:334]
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sim_1/imports/new/test_64.v:345]
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sim_1/imports/new/test_64.v:329]
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sim_1/imports/new/test_64.v:411]

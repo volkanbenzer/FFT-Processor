@@ -1,0 +1,601 @@
+
+*** Running vivado
+    with args -log FFT_Processor_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_Processor_top.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Jun 17 20:21:47 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source FFT_Processor_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/utils_1/imports/synth_1/FFT_Processor_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/utils_1/imports/synth_1/FFT_Processor_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top FFT_Processor_top -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22932
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 850.180 ; gain = 473.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FFT_Processor_top' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/FFT_Processor_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RAM_16x1024' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/RAM_16x1024.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_16x1024' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/RAM_16x1024.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Communication_Interface' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/Communication_Interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Serial_Interface' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/Serial_Interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UART' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/UART.v:21]
+INFO: [Synth 8-6157] synthesizing module 'baudRateGenerator' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/baudRateGenerator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'baudRateGenerator' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/baudRateGenerator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transmitter' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/transmitter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'transmitter' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/transmitter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'receiver' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/receiver.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/receiver.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'receiver' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/receiver.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'UART' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/UART.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/Serial_Interface.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'Serial_Interface' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/Serial_Interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Communication_Interface' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/Communication_Interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FixFFT' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/new/FixFFT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BitReversalModul' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/BitReversalModul.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/BitReversalModul.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'BitReversalModul' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/BitReversalModul.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ButterflyModul' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/butterflyModul.v:21]
+INFO: [Synth 8-6157] synthesizing module 'fixMultiplier' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/fixMultiplier.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fixMultiplier' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/fixMultiplier.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/butterflyModul.v:141]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/butterflyModul.v:208]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/butterflyModul.v:327]
+INFO: [Synth 8-6155] done synthesizing module 'ButterflyModul' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/butterflyModul.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dB_Calculator' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/dB_Calculator.v:21]
+INFO: [Synth 8-6157] synthesizing module 'sqrt32' [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/sqrt32.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'sqrt32' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/sqrt32.v:58]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/dB_Calculator.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'dB_Calculator' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/dB_Calculator.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'FixFFT' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/new/FixFFT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_Processor_top' (0#1) [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/FFT_Processor_top.v:23]
+WARNING: [Synth 8-6014] Unused sequential element fixMpy_A_reg was removed.  [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/fixMultiplier.v:46]
+WARNING: [Synth 8-6014] Unused sequential element fixMpy_B_reg was removed.  [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/fixMultiplier.v:47]
+WARNING: [Synth 8-6014] Unused sequential element fixMpy_C_reg was removed.  [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/fixMultiplier.v:49]
+WARNING: [Synth 8-6014] Unused sequential element fixMpy_D_reg was removed.  [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/fixMultiplier.v:51]
+WARNING: [Synth 8-6014] Unused sequential element fixMpy_E_reg was removed.  [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/fixMultiplier.v:55]
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[15] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[14] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[13] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[12] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[11] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[10] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[9] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[8] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[7] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[6] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[5] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[4] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[3] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[2] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[1] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataOutRAMSampleSineW_InputPort[0] in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitReversalBusy_InputPin in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port butterflyBusy_InputPin in module Serial_Interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[15] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[14] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[13] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[12] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[11] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[10] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[9] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[8] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[7] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[6] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[5] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[4] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[3] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[2] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[1] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[0] in module FFT_Processor_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 973.375 ; gain = 596.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 973.375 ; gain = 596.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 973.375 ; gain = 596.840
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'transmitter'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'receiver'
+INFO: [Synth 8-802] inferred FSM for state register 'transmitStateCnt_reg' in module 'Serial_Interface'
+INFO: [Synth 8-802] inferred FSM for state register 'stateCnt_reg' in module 'Serial_Interface'
+INFO: [Synth 8-802] inferred FSM for state register 'reorderState_reg' in module 'BitReversalModul'
+WARNING: [Synth 8-3936] Found unconnected internal register 'cnt_j2_reg' and it is trimmed from '11' to '10' bits. [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/butterflyModul.v:333]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cnt_j_reg' and it is trimmed from '11' to '10' bits. [D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/butterflyModul.v:212]
+INFO: [Synth 8-802] inferred FSM for state register 'loop3_state_reg' in module 'ButterflyModul'
+INFO: [Synth 8-802] inferred FSM for state register 'loop2_state_reg' in module 'ButterflyModul'
+INFO: [Synth 8-802] inferred FSM for state register 'loop1_state_reg' in module 'ButterflyModul'
+INFO: [Synth 8-802] inferred FSM for state register 'stateCnt_reg' in module 'dB_Calculator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                              000 |                              000
+             STATE_START |                              001 |                              001
+              STATE_DATA |                              010 |                              010
+                  iSTATE |                              011 |                              011
+              STATE_STOP |                              100 |                              100
+            STATE_FINISH |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           RX_STATE_IDLE |                              000 |                              000
+          RX_STATE_START |                              001 |                              001
+           RX_STATE_DATA |                              010 |                              010
+           RX_STATE_STOP |                              011 |                              101
+                 iSTATE0 |                              100 |                              011
+                  iSTATE |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                      00000000001 |                         00000000
+                 iSTATE6 |                      00000000010 |                         00000001
+                 iSTATE4 |                      00000000100 |                         00000010
+                 iSTATE1 |                      00000001000 |                         00000011
+                 iSTATE2 |                      00000010000 |                         00000100
+         WRITE_RAM_STATE |                      00000100000 |                         00010000
+                 iSTATE3 |                      00001000000 |                         00010001
+                 iSTATE0 |                      00010000000 |                         00010010
+                  iSTATE |                      00100000000 |                         00010011
+         START_FFT_STATE |                      01000000000 |                         00100000
+                 iSTATE5 |                      10000000000 |                         00100001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stateCnt_reg' using encoding 'one-hot' in module 'Serial_Interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                        000000001 |                         00000000
+                 iSTATE4 |                        000000010 |                         00000001
+                 iSTATE3 |                        000000100 |                         00000010
+                 iSTATE1 |                        000001000 |                         00000011
+                 iSTATE2 |                        000010000 |                         00000100
+                 iSTATE0 |                        000100000 |                         00000101
+                 iSTATE6 |                        001000000 |                         00001001
+                  iSTATE |                        010000000 |                         00000110
+                 iSTATE7 |                        100000000 |                         00000111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'transmitStateCnt_reg' using encoding 'one-hot' in module 'Serial_Interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                              000 |                             0000
+                 iSTATE1 |                              001 |                             0001
+                 iSTATE3 |                              010 |                             0101
+                 iSTATE2 |                              011 |                             0010
+                  iSTATE |                              100 |                             0011
+                 iSTATE0 |                              101 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'reorderState_reg' using encoding 'sequential' in module 'BitReversalModul'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                     000000000001 |                             0000
+                 iSTATE4 |                     000000000010 |                             0001
+                 iSTATE1 |                     000000000100 |                             0010
+                  iSTATE |                     000000001000 |                             0011
+                 iSTATE0 |                     000000010000 |                             0100
+                iSTATE10 |                     000000100000 |                             0101
+                 iSTATE9 |                     000001000000 |                             0110
+                 iSTATE7 |                     000010000000 |                             0111
+                 iSTATE8 |                     000100000000 |                             1000
+                 iSTATE6 |                     001000000000 |                             1001
+                 iSTATE3 |                     010000000000 |                             1010
+                 iSTATE2 |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'loop1_state_reg' using encoding 'one-hot' in module 'ButterflyModul'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE0 |                              001 |                             0001
+                 iSTATE1 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE3 |                              100 |                             0100
+                 iSTATE4 |                              101 |                             0101
+                 iSTATE5 |                              110 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'loop2_state_reg' using encoding 'sequential' in module 'ButterflyModul'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                             0000
+                  iSTATE |                               01 |                             0001
+                 iSTATE0 |                               10 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'loop3_state_reg' using encoding 'sequential' in module 'ButterflyModul'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                              000 |                             0000
+                  iSTATE |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE1 |                              011 |                             0011
+                 iSTATE2 |                              100 |                             0100
+                 iSTATE3 |                              101 |                             0101
+                 iSTATE5 |                              110 |                             0110
+                 iSTATE4 |                              111 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stateCnt_reg' using encoding 'sequential' in module 'dB_Calculator'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 973.375 ; gain = 596.840
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 6     
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 4     
+	   3 Input   16 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
+	   3 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 29    
+	               11 Bit    Registers := 9     
+	               10 Bit    Registers := 12    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 40    
++---RAMs : 
+	              16K Bit	(1024 X 16 bit)          RAMs := 5     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 17    
+	  11 Input   16 Bit        Muxes := 3     
+	   9 Input   16 Bit        Muxes := 1     
+	  12 Input   16 Bit        Muxes := 4     
+	   7 Input   16 Bit        Muxes := 2     
+	  11 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 3     
+	   4 Input   11 Bit        Muxes := 1     
+	   6 Input   11 Bit        Muxes := 1     
+	   3 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 10    
+	   6 Input   10 Bit        Muxes := 3     
+	  12 Input   10 Bit        Muxes := 1     
+	   7 Input   10 Bit        Muxes := 1     
+	   8 Input   10 Bit        Muxes := 1     
+	   9 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 3     
+	   6 Input    8 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	  12 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 8     
+	   7 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   6 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 42    
+	   6 Input    1 Bit        Muxes := 27    
+	   3 Input    1 Bit        Muxes := 12    
+	  11 Input    1 Bit        Muxes := 14    
+	   9 Input    1 Bit        Muxes := 8     
+	  12 Input    1 Bit        Muxes := 13    
+	   7 Input    1 Bit        Muxes := 11    
+	   8 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mul2/CalcResult_outputPort4, operation Mode is: A''*B2.
+DSP Report: register mul2_value2_reg is absorbed into DSP mul2/CalcResult_outputPort4.
+DSP Report: register wi_reg is absorbed into DSP mul2/CalcResult_outputPort4.
+DSP Report: register mul2_value1_reg is absorbed into DSP mul2/CalcResult_outputPort4.
+DSP Report: operator mul2/CalcResult_outputPort4 is absorbed into DSP mul2/CalcResult_outputPort4.
+DSP Report: Generating DSP mul1/CalcResult_outputPort4, operation Mode is: A''*B2.
+DSP Report: register mul1_value2_reg is absorbed into DSP mul1/CalcResult_outputPort4.
+DSP Report: register wr_reg is absorbed into DSP mul1/CalcResult_outputPort4.
+DSP Report: register mul1_value1_reg is absorbed into DSP mul1/CalcResult_outputPort4.
+DSP Report: operator mul1/CalcResult_outputPort4 is absorbed into DSP mul1/CalcResult_outputPort4.
+DSP Report: Generating DSP mul4/CalcResult_outputPort4, operation Mode is: A''*B2.
+DSP Report: register mul1_value2_reg is absorbed into DSP mul4/CalcResult_outputPort4.
+DSP Report: register wi_reg is absorbed into DSP mul4/CalcResult_outputPort4.
+DSP Report: register mul2_value1_reg is absorbed into DSP mul4/CalcResult_outputPort4.
+DSP Report: operator mul4/CalcResult_outputPort4 is absorbed into DSP mul4/CalcResult_outputPort4.
+DSP Report: Generating DSP mul3/CalcResult_outputPort4, operation Mode is: A''*B2.
+DSP Report: register mul2_value2_reg is absorbed into DSP mul3/CalcResult_outputPort4.
+DSP Report: register wr_reg is absorbed into DSP mul3/CalcResult_outputPort4.
+DSP Report: register mul1_value1_reg is absorbed into DSP mul3/CalcResult_outputPort4.
+DSP Report: operator mul3/CalcResult_outputPort4 is absorbed into DSP mul3/CalcResult_outputPort4.
+DSP Report: Generating DSP mul1Result_reg, operation Mode is: (A*B)'.
+DSP Report: register mul1Result_reg is absorbed into DSP mul1Result_reg.
+DSP Report: operator mul1Result0 is absorbed into DSP mul1Result_reg.
+DSP Report: Generating DSP totalResult_reg, operation Mode is: (PCIN+(A*B)')'.
+DSP Report: register totalResult_reg is absorbed into DSP totalResult_reg.
+DSP Report: register mul2Result_reg is absorbed into DSP totalResult_reg.
+DSP Report: operator totalResult0 is absorbed into DSP totalResult_reg.
+DSP Report: operator mul2Result0 is absorbed into DSP totalResult_reg.
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[15] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[14] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[13] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[12] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[11] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[10] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[9] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[8] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[7] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[6] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[5] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[4] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[3] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[2] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[1] in module FFT_Processor_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dataInRAMdB_InputPort[0] in module FFT_Processor_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1182.129 ; gain = 805.594
+---------------------------------------------------------------------------------
+ Sort Area is  mul1Result_reg_5 : 0 0 : 1969 4065 : Used 1 time 0
+ Sort Area is  mul1Result_reg_5 : 0 1 : 2096 4065 : Used 1 time 0
+ Sort Area is  mul1/CalcResult_outputPort4_0 : 0 0 : 1985 1985 : Used 1 time 0
+ Sort Area is  mul2/CalcResult_outputPort4_2 : 0 0 : 1985 1985 : Used 1 time 0
+ Sort Area is  mul3/CalcResult_outputPort4_3 : 0 0 : 1985 1985 : Used 1 time 0
+ Sort Area is  mul4/CalcResult_outputPort4_4 : 0 0 : 1985 1985 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name       | RTL Object               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|FFT_Processor_top | RAM_sample_uut/mem_reg   | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|FFT_Processor_top | RAM_sineWave_uut/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|FFT_Processor_top | RAM_Reel_uut/mem_reg     | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|FFT_Processor_top | RAM_Imag_uut/mem_reg     | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|FFT_Processor_top | RAM_dB_uut/mem_reg       | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ButterflyModul | A''*B2         | 16     | 16     | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|ButterflyModul | A''*B2         | 16     | 16     | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|ButterflyModul | A''*B2         | 16     | 16     | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|ButterflyModul | A''*B2         | 16     | 16     | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dB_Calculator  | (A*B)'         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dB_Calculator  | (PCIN+(A*B)')' | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 1    | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1182.129 ; gain = 805.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name       | RTL Object               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|FFT_Processor_top | RAM_sample_uut/mem_reg   | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|FFT_Processor_top | RAM_sineWave_uut/mem_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|FFT_Processor_top | RAM_Reel_uut/mem_reg     | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|FFT_Processor_top | RAM_Imag_uut/mem_reg     | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|FFT_Processor_top | RAM_dB_uut/mem_reg       | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance RAM_sample_uut/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_sineWave_uut/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_Reel_uut/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_Imag_uut/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_dB_uut/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1182.129 ; gain = 805.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1348.492 ; gain = 971.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1348.492 ; gain = 971.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1348.492 ; gain = 971.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1348.492 ; gain = 971.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1349.488 ; gain = 972.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1349.488 ; gain = 972.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ButterflyModul | A''*B'         | 30     | 18     | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|ButterflyModul | A''*B'         | 30     | 18     | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|ButterflyModul | A''*B'         | 30     | 18     | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|ButterflyModul | A''*B'         | 30     | 18     | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|dB_Calculator  | (A*B)'         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dB_Calculator  | (PCIN+(A*B)')' | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 1    | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    81|
+|3     |DSP48E1  |     6|
+|4     |LUT1     |    34|
+|5     |LUT2     |   169|
+|6     |LUT3     |   144|
+|7     |LUT4     |   251|
+|8     |LUT5     |   179|
+|9     |LUT6     |   334|
+|10    |MUXF7    |     1|
+|11    |RAMB18E1 |     5|
+|12    |FDRE     |   711|
+|13    |FDSE     |    22|
+|14    |IBUF     |    51|
+|15    |OBUF     |     5|
+|16    |OBUFT    |    32|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------------------+------------------------+------+
+|      |Instance                     |Module                  |Cells |
++------+-----------------------------+------------------------+------+
+|1     |top                          |                        |  2026|
+|2     |  RAM_sample_uut             |RAM_16x1024_2           |     1|
+|3     |  CommunicationInterface_uut |Communication_Interface |   491|
+|4     |    serialInterface_uut      |Serial_Interface        |   491|
+|5     |      uart_uut               |UART                    |   156|
+|6     |        baudRateGenerator1   |baudRateGenerator       |    38|
+|7     |        receiver1            |receiver                |    80|
+|8     |        transmitter1         |transmitter             |    38|
+|9     |  FixFFT_uut                 |FixFFT                  |  1424|
+|10    |    BitReversalModul_uut     |BitReversalModul        |   234|
+|11    |    butterfly_uut            |ButterflyModul          |   823|
+|12    |      mul1                   |fixMultiplier           |    38|
+|13    |      mul2                   |fixMultiplier_4         |    22|
+|14    |      mul3                   |fixMultiplier_5         |    65|
+|15    |      mul4                   |fixMultiplier_6         |    60|
+|16    |    dB_Calculator_uut        |dB_Calculator           |   367|
+|17    |      uut                    |sqrt32                  |   250|
+|18    |  RAM_Imag_uut               |RAM_16x1024             |     1|
+|19    |  RAM_Reel_uut               |RAM_16x1024_0           |     1|
+|20    |  RAM_dB_uut                 |RAM_16x1024_1           |    17|
+|21    |  RAM_sineWave_uut           |RAM_16x1024_3           |     1|
++------+-----------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1349.488 ; gain = 972.953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 58 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1349.488 ; gain = 972.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1349.488 ; gain = 972.953
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1363.602 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 16 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1473.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 2ecc46e5
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1473.746 ; gain = 1103.465
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1473.746 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/Verilog/FFT_Processor_V1.3/FFT_Processor_V1.3.runs/synth_1/FFT_Processor_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file FFT_Processor_top_utilization_synth.rpt -pb FFT_Processor_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 17 20:22:25 2025...

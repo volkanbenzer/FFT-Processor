@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/BitReversalModul.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/Communication_Interface.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/FFT_Processor_top.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/new/FixFFT.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/RAM_16x1024.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/Serial_Interface.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/UART.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/baudRateGenerator.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/butterflyModul.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/dB_Calculator.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/fixMultiplier.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/receiver.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/FFT_Processor_V1.0/FFT_Processor_V1.0.srcs/sources_1/imports/new/sqrt32.v" \
+"../../../../FFT_Processor_V1.3.srcs/sources_1/imports/sources_1/imports/Verilog/Basic_UART_Spartan3E/transmitter.v" \
+"../../../../FFT_Processor_V1.3.srcs/sim_1/imports/new/test_64.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
